@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pasteries Store</title>
+		<link rel="stylesheet" type="text/css" href="Assigment1.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javaScript.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="jumbotron">
+	<h1>Love Pastries</h1>
+</div>
+<div class="container-fluid">
+	<marquee behavior="alternate">Choose from wide range of pastries</marquee>
+	</div>
+
+<!-- Div for the whole page -->
+<div class="container">
+
+<!-- for the search bar -->
+
+
+<div class="row">
+	<div class="col-sm-4"></div>
+  <div class="col-sm-8">
+
+  	 <div class="search">
+      <input type="text" id="inputbar" class="searchTerm" onkeyup="mySearchFunction()" placeholder="What are you looking for?">
+      <button  type="submit" class="searchButton ">
+      	 <span style="	size:20px; " class="glyphicon glyphicon-search"   ></span>
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+  </div>
+
+</div>
+
+
+<!--  For buttons -->
+<div class="row marginTop"style="margin-top:55px; ">
+	<center><p class="col-sm-12" style="font-family: Garamond;font-size:20px;color:brown"><span><img src="./images/boy.gif" height=150px> </span><strong>Select from it !! </strong></p></p></div></center>
+</h3>
+<div class="row">
+<span class="col-sm-1"></span>
+<span id="all"  class="col-sm-2"><button class="btn btn-success" onclick="showhide('allcard')">ALL</button></span>
+<span id="cupcake" class="col-sm-3"><button class="btn btn-success" onclick="showhide('cupcake_card')">Cupcake</button></span>
+<span id="donouts" class="col-sm-3"><button class="btn btn-success" onclick="showhide('donuts_card')">Donuts</button></span>
+<span id="candy"  class="col-sm-3"><button class="btn btn-success" onclick="showhide('candy_card')">Candy</button></span>
+</div></h3></h3>
+<!--  -->
+<div class="card" id="allcard" >
+<!-- <Donut card>  -->
+<div class="card" id="donuts_card" >
+
+<div class="card marginBetween border" id="mystyle1">
+	<img  class="card-img imageAlign"  src="./images/d1.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+	<div style="" class="card-body">
+		<h3 class="card-title" style="	">Donut category 1</h3></h3>
+
+	<a style="margin-Bottom:20px"style="margin-Bottom:20px" href="#" class="btn btn-primary marginBottom">Buy</a>
+	</div>
+</div>
+
+<div class=" card  marginBetween border" id="mystyle1">
+	<img  class="card-img imageAlign"  src="./images/d2.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+	<div style=""class="card-body">
+		<h3 class="card-title" style="">Donut category 2</h3></h3>
+
+	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+	</div>
+</div>
+
+
+<div class=" card  marginBetween border" id="mystyle1">
+	<img  class="card-img imageAlign"  src="./images/d3.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+	<div style=""class="card-body">
+		<h3 class="card-title" style="">Donut category 3</h3></h3>
+
+	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+	</div>
+</div>
+
+<div class=" card  marginBetween border" id="mystyle1" >
+	<img  class="card-img imageAlign"  src="./images/d4.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+	<div style=""class="card-body">
+		<h3 class="card-title" style="">Donut category 4</h3></h3>
+
+	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+	</div>
+</div>
+</div>
+
+ <!-- Cup cake -->
+ <div class="card" id="cupcake_card">
+ <div class=" card  marginBetween border" id=mystyle2 >
+ 	<img  class="card-img imageAlign"  src="./images/c1.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">cupcake category 1</h3></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+
+ <div class=" card  marginBetween border" id=mystyle2 >
+ 	<img  class="card-img imageAlign"  height="250" src="./images/c2.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">Cupcake category 2 </h3></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+
+ <div class=" card  marginBetween border" id=mystyle2 >
+ 	<img  class="card-img imageAlign"  src="./images/c3.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">Cupcake category 3</h3></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+
+ <div class=" card  marginBetween border" id=mystyle2 >
+ 	<img  class="card-img imageAlign"  src="./images/c4.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">Cupcake category 4</h3></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+</div>
+ <!-- < PASTRIES CANDIES> -->
+<div class="card" id="candy_card">
+ <div class=" card  marginBetween border" id=mystyle3 >
+ 	<img  class="card-img imageAlign"  height="200" src="./images/p1.jpg"  alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">Pastries category 1 </h3></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+
+ <div class=" card  marginBetween border" id=mystyle3>
+ 	<img  class="card-img imageAlign"  src="./images/p2.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">Pastries category 2</h3></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+
+ <div class=" card  marginBetween border" id=mystyle3>
+ 	<img  class="card-img imageAlign"  src="./images/p3.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style=""><strong>Pastries category 3</strong></h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+
+ <div class=" card  marginBetween border" id=mystyle3>
+ 	<img  class="card-img imageAlign"  src="./images/p4.jpg" alt="Card image" style="width:40%;  transition: width 2s linear 1s">
+ 	<div style=""class="card-body">
+ 		<h3 class="card-title" style="">Pastries category 4</h3>
+
+ 	<a style="margin-Bottom:20px"href="#" class="btn btn-primary stretched-link">Buy</a>
+ 	</div>
+ </div>
+</div>
+</div>
+<!-- <> -->
+
+</h3></h3>
+</div>
+</div>
+<br><br>
+<footer style="background-color:black;color:white;text-align: center;height:150px" class="page-footer ">
+<br>
+<h4> This page is made using Bootstrap, CSS and Javascript </h4>
+<h4> Made by shubham Bhagat <span class="glyphicon glyphicon-heart-empty "></span></h4>
+
+</footer>
+
+</body>
+</html>
